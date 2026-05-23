@@ -4,7 +4,8 @@ on:
   push:
     tags:
       - 'v*'
-
+  workflow_dispatch:
+    
 jobs:
   build:
     name: 构建 ${{ matrix.os }}
